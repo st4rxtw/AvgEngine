@@ -18,10 +18,12 @@ This is an engine built in **CPP**, which is super scary!!! oooo. But seriously,
 
 # Building
 
-This was made in mind with Visual Studio, so we are using **MSBuild**.
+We shall be using **CMake**, because it's crossplatform unlike Visual Studio and MSBuild.
 
 # Requirements
 ### For the libraries and stuff.
+
+There's a simple setup.sh/.bat script for easy setup.
 
 #### Bass
 > Created by Un4seen Developments
