@@ -6,8 +6,8 @@
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
-#include <AvgEngine/External/Image/stbi.h>
-#include <AvgEngine/Utils/Logging.h>
+#include "stbi.h"
+#include "../../Utils/Logging.h"
 
 using namespace AvgEngine::External;
 

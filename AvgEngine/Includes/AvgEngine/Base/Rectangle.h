@@ -9,8 +9,8 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
-#include <AvgEngine/Utils/Logging.h>
-#include <AvgEngine/Base/GameObject.h>
+#include "GameObject.h"
+#include "../Utils/Logging.h"
 namespace AvgEngine::Base
 {
 	class Rectangle : public GameObject

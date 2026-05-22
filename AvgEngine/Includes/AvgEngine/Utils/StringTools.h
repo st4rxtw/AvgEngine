@@ -13,9 +13,11 @@
 #include <vector>
 #include <sys/stat.h>
 #include <chrono>
-#include <wtypes.h>
 #include <cstdint>
 #include <boost/algorithm/string.hpp>
+#ifdef _WIN32
+#   include <wtypes.h>
+#endif
 namespace AvgEngine::Utils
 {
     class StringTools
@@ -74,16 +76,21 @@ namespace AvgEngine::Utils
                 });
         }
 
-        static std::wstring S2ws(const std::string& s, bool isUtf8 = true)
+        static std::wstring S2ws(const std::string& s, [[maybe_unused]] bool isUtf8 = true)
         {
-            int len;
-            int slength = (int)s.length() + 1;
-            len = MultiByteToWideChar(isUtf8 ? CP_UTF8 : CP_ACP, 0, s.c_str(), slength, 0, 0);
-            std::wstring buf;
-            buf.resize(len);
-            MultiByteToWideChar(isUtf8 ? CP_UTF8 : CP_ACP, 0, s.c_str(), slength,
-                const_cast<wchar_t*>(buf.c_str()), len);
+#ifdef _WIN32
+            int slength = static_cast<int>(s.length()) + 1;
+            int len = MultiByteToWideChar(isUtf8 ? CP_UTF8 : CP_ACP, 0, s.c_str(), slength, nullptr, 0);
+            std::wstring buf(len, L'\0');
+            MultiByteToWideChar(isUtf8 ? CP_UTF8 : CP_ACP, 0, s.c_str(), slength, buf.data(), len);
             return buf;
+#else
+            size_t len = mbstowcs(nullptr, s.c_str(), 0);
+            if (len == static_cast<size_t>(-1)) return {};
+            std::wstring buf(len, L'\0');
+            mbstowcs(buf.data(), s.c_str(), len);
+            return buf;
+#endif
         }
 
         static std::vector<std::string> Split(std::string s, std::string delimiter) {

@@ -4,7 +4,7 @@
 	Use of this source code without explict permission from owner is strictly prohibited.
 */
 
-#include <AvgEngine/Render/Display.h>
+#include "Display.h"
 
 #include <Glad/glad.h>
 

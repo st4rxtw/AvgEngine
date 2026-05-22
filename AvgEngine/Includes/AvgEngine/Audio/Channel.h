@@ -13,7 +13,7 @@
 #include <Bass/bass.h>
 #include <Bass/bass_fx.h>
 
-#include <AvgEngine/Utils/Logging.h>
+#include "../Utils/Logging.h"
 
 namespace AvgEngine::Audio
 {

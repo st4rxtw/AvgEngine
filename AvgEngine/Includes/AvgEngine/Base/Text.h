@@ -9,8 +9,8 @@
 #ifndef TEXT_H
 #define TEXT_H
 
-#include <AvgEngine/External/SpriteFont/FntParser.h>
-#include <AvgEngine/Base/GameObject.h>
+#include "../External/SpriteFont/FntParser.h"
+#include "GameObject.h"
 
 namespace AvgEngine::Base
 {

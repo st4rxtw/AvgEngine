@@ -8,10 +8,10 @@
 #ifndef MENU_H
 #define MENU_H
 
-#include <AvgEngine/Base/Camera.h>
-#include <AvgEngine/Render/Display.h>
-#include <AvgEngine/EventManager.h>
-#include <AvgEngine/Base/GameObject.h>
+#include "Camera.h"
+#include "../Render/Display.h"
+#include "../EventManager.h"
+#include "GameObject.h"
 
 namespace AvgEngine::Base
 {

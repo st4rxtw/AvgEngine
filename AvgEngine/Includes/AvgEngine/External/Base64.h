@@ -26,6 +26,7 @@
  */
 
 #include <string>
+#include <cstdint>
 
 namespace macaron {
 

@@ -8,7 +8,7 @@
 #define PATHS_H
 
 #pragma once
-#include <AvgEngine/Utils/StringTools.h>
+#include "StringTools.h"
 #include <iostream>
 #include <shlobj.h>
 #include <sys/stat.h>

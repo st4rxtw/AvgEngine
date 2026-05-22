@@ -6,7 +6,7 @@
 #include <unordered_map>
 #include <algorithm>
 
-#include <AvgEngine/Utils/Easing.h>
+#include "Easing.h"
 
 using namespace AvgEngine::Easing;
 

@@ -6,7 +6,7 @@
 
 #include <Glad/glad.h>
 
-#include <AvgEngine/Render/OpenGL/Shader.h>
+#include "Shader.h"
 using namespace AvgEngine::OpenGL;
 
 #ifndef SHADER_CPP

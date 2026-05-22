@@ -9,12 +9,11 @@
 
 #pragma once
 
-#include <AvgEngine/Render/Display.h>
-#include <AvgEngine/External/XML/pugixml.hpp>
-#include <AvgEngine/Render/OpenGL/Texture.h>
+#include "../../Render/Display.h"
+#include "../XML/pugixml.hpp"
+#include "../../Render/OpenGL/Texture.h"
 
-#include <AvgEngine/Utils/Logging.h>
-
+#include "../../Utils/Logging.h"
 #include <vector>
 
 namespace AvgEngine::Fnt

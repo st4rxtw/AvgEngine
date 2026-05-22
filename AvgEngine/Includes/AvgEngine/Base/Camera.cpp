@@ -4,7 +4,7 @@
 	Use of this source code without explict permission from owner is strictly prohibited.
 */
 
-#include <AvgEngine/Base/Camera.h>
+#include "Camera.h"
 #include <algorithm>
 
 void AvgEngine::Base::Camera::draw()

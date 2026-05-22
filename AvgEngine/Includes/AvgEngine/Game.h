@@ -8,10 +8,12 @@
 #define GAME_H
 
 #pragma once
-#include <AvgEngine/Base/Menu.h>
-#include <AvgEngine/Debug/Console.h>
-#include <AvgEngine/EventManager.h>
-#include <AvgEngine/Base/Text.h>
+#include "Base/Menu.h"
+// We comment out the console due to Kade not adding it
+// Maybe I could see if I could recreate it maybe? Idfk
+//#include "Debug/Console.h"
+#include "EventManager.h"
+#include "Base/Text.h"
 #include <mutex>
 
 namespace AvgEngine
@@ -31,7 +33,7 @@ namespace AvgEngine
 
 		std::string controllerName = "";
 
-		Debug::Console console{};
+		//Debug::Console console{};
 
 		std::mutex eventMutex;
 
@@ -67,7 +69,7 @@ namespace AvgEngine
 			Render::Display::height = h;
 
 			eManager = {};
-			console.registerEvents(eManager);
+			//console.registerEvents(eManager);
 
 			// create font cache
 			Fnt::Fnt::fonts = new std::vector<Fnt::Fnt*>();
@@ -190,9 +192,11 @@ namespace AvgEngine
 
 		virtual void Event(const Events::Event& e)
 		{
+			/*
 			for (Events::Listener listen : eManager.Listeners)
 				if (listen.type == e.type && (console.open ? listen.console : true))
 					listen.toCall(e);
+			*/		
 		}
 
 		virtual void SwitchMenu(std::shared_ptr<Base::Menu> menu)

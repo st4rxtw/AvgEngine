@@ -4,7 +4,7 @@
 	Use of this source code without explict permission from owner is strictly prohibited.
 */
 
-#include <AvgEngine/External/Bass/BASS.h>
+#include "../External/Bass/BASS.h"
 
 void CALLBACK Sync(HSYNC handle, DWORD channel, DWORD data, void* user)
 {

@@ -4,7 +4,7 @@
 	Use of this source code without explict permission from owner is strictly prohibited.
 */
 
-#include <AvgEngine/Base/GameObject.h>
+#include "GameObject.h"
 
 void AvgEngine::Base::GameObject::draw()
 {

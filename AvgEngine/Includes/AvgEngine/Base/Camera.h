@@ -10,9 +10,9 @@
 
 #include <vector>
 #include <iostream>
-#include <AvgEngine/Render/Display.h>
-#include <AvgEngine/Render/OpenGL/Shader.h>
-#include <AvgEngine/Render/OpenGL/Texture.h>
+#include "../Render/Display.h"
+#include "../Render/OpenGL/Shader.h"
+#include "../Render/OpenGL/Texture.h"
 #include <glm/gtc/matrix_transform.hpp>
 
 namespace AvgEngine::Base

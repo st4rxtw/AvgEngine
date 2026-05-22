@@ -9,7 +9,7 @@
 
 #pragma once
 
-#include <AvgEngine/Base/GameObject.h>
+#include "../Base/GameObject.h"
 
 namespace AvgEngine::Utils
 {

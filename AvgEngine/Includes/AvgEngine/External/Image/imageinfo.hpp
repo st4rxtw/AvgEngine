@@ -45,6 +45,7 @@
 	#include <array>
 	#include <cstdio>
 	#include <cassert>
+	#include <cstring>
 
 	#ifndef II_HEADER_CACHE_SIZE
 	#define II_HEADER_CACHE_SIZE    (1024)

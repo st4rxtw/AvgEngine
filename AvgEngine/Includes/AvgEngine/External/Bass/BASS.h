@@ -10,7 +10,7 @@
 #pragma once
 
 #include <vector>
-#include <AvgEngine/Audio/Channel.h>
+#include "../../Audio/Channel.h"
 
 namespace AvgEngine::External
 {

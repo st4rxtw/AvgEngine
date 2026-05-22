@@ -9,9 +9,9 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
-#include <AvgEngine/Base/Camera.h>
-#include <AvgEngine/Utils/TweenManager.h>
-#include <AvgEngine/EventManager.h>
+#include "Camera.h"
+#include "../Utils/TweenManager.h"
+#include "../EventManager.h"
 #include <algorithm>
 
 namespace AvgEngine::Base

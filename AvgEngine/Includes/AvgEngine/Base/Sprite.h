@@ -8,8 +8,8 @@
 #ifndef SPRITE_H
 #define SPRITE_H
 
-#include <AvgEngine/Base/GameObject.h>
-#include <AvgEngine/Utils/Logging.h>
+#include "GameObject.h"
+#include "../Utils/Logging.h"
 
 namespace AvgEngine::Base
 {

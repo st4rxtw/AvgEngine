@@ -9,12 +9,12 @@
 
 #pragma once
 
-#include <AvgEngine/Render/OpenGL/Shader.h>
-#include <AvgEngine/Render/OpenGL/Texture.h>
+#include "OpenGL/Shader.h"
+#include "OpenGL/Texture.h"
 
 #include <GLFW/glfw3.h>
 
-#include <AvgEngine/Utils/Logging.h>
+#include "../Utils/Logging.h"
 
 namespace AvgEngine::Render
 {

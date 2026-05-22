@@ -44,7 +44,11 @@ namespace AvgEngine
 			auto start = std::chrono::system_clock::now();
 			auto legacyStart = std::chrono::system_clock::to_time_t(start);
 			char tmBuff[30];
+#ifdef _WIN32
 			ctime_s(tmBuff, sizeof(tmBuff), &legacyStart);
+#else
+			ctime_r(&legacyStart, tmBuff);
+#endif
 
 			std::string date = std::string(tmBuff);
 

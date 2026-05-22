@@ -4,7 +4,7 @@
 	Use of this source code without explict permission from owner is strictly prohibited.
 */
 
-#include <AvgEngine/Utils/Logging.h>
+#include "Logging.h"
 
 // obligatory out of class definition (or if you don't do this, this is what happens https://imgur.com/a/togqxR6)
 

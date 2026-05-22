@@ -8,8 +8,8 @@
 #define TWEENMANAGER_H
 
 #pragma once
-#include <AvgEngine/Utils/Easing.h>
-#include <AvgEngine/Render/Display.h>
+#include "Easing.h"
+#include "../Render/Display.h"
 #include <functional>
 #include <algorithm>
 

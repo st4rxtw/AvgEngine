@@ -1,4 +1,4 @@
-#include <AvgEngine/External/Bass/BASS.h>
+#include "BASS.h"
 
 using namespace AvgEngine::External;
 

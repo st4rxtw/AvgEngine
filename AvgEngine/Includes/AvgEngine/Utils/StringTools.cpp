@@ -4,7 +4,7 @@
     Use of this source code without explict permission from owner is strictly prohibited.
 */
 
-#include <AvgEngine/Utils/StringTools.h>
+#include "StringTools.h"
 #include <GLFW/glfw3.h>
 
 static const std::unordered_map<int, std::string> stringTools_keyCodeToName = {

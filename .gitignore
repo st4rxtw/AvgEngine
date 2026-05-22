@@ -362,3 +362,8 @@ AvgEngine/.vs/*
 Demo/.vs/*
 
 AvgEngine/vcpkg_installed/*
+
+build/
+CMakeCache.txt
+CMakeFiles/
+deps/

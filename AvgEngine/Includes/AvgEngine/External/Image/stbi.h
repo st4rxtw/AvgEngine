@@ -10,7 +10,7 @@
 
 #pragma once
 #include <iostream>
-#include <AvgEngine/Render/OpenGL/Texture.h>
+#include "../../Render/OpenGL/Texture.h"
 namespace AvgEngine::External
 {
 	struct Pixel {

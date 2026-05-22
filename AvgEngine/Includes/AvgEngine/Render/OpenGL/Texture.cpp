@@ -4,10 +4,10 @@
 	Use of this source code without explict permission from owner is strictly prohibited.
 */
 
-#include <AvgEngine/Render/OpenGL/Texture.h>
+#include "Texture.h"
 
-#include <AvgEngine/External/Image/imageinfo.hpp>
-#include <AvgEngine/External/Image/stbi.h>
+#include "../../External/Image/imageinfo.hpp"
+#include "../../External/Image/stbi.h"
 
 #include <Glad/glad.h>
 
